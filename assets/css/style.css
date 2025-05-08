@@ -52,6 +52,7 @@ body {
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     transition: transform 0.3s ease-out;
+
 }
 
 li {
@@ -397,7 +398,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1rem;
+    padding: 6rem 3rem;
     z-index: 1;
     user-select: none;
     overflow: visible;
@@ -530,6 +531,7 @@ a {
     justify-content: right;
     align-items: center;
     position: absolute;
+    border-radius: 110%;
 }
 
 .complemento-sobre {
@@ -559,7 +561,11 @@ a {
 .imagem-sobre img {
     width: 90%;
     z-index: 99;
+    border-radius: 50%; /* Torna a borda arredondada */
+    padding: 5px; /* Ajuste o valor para controlar a largura da borda */
+    border: 3px solid rgba(255, 255, 255, 0.3); /* Borda branca com transparência */
 }
+
 
 /*************** SKILLS *****/
 .skills {
@@ -866,7 +872,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 8rem;
-}
+} 
 
 .case1,
 .case2,
@@ -888,7 +894,10 @@ a {
 }
 
 .slide {
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -986,7 +995,7 @@ a {
     width: 100vw;
     height: auto;
     display: flex;
-    padding: 2rem 0rem 3rem 0rem;
+    padding: 4rem 1rem 6rem 1rem;
     align-items: center;
     justify-content: center;
     background-color: var(--color-white);
@@ -1019,10 +1028,10 @@ a {
 
 .titulo-contato h1 {
     color: var(--color-black);
-    width: 50%;
-    font-size: 8vw;
-    font-weight: lighter;
-    font-family: var(--font-grande);
+    margin-bottom: 32px;
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: var(--font-grande)
 }
 
 .descricao-contato {
@@ -1219,4 +1228,86 @@ a {
 
 .credits-column p {
     margin: 0.2rem 0;
+}
+
+
+
+
+
+section#skills {
+    margin: 2.5rem 0 10rem 0
+}
+
+section#skills .skills .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+section#skills .skills .container h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.2rem;
+    color: #F9F9F9;
+    font-weight: 600;
+    margin-bottom: 10rem
+}
+
+@media (max-width: 480px) {
+    section#skills .skills .container h2 {
+        margin-bottom: 5rem
+    }
+}
+
+section#skills .skills .container .cards {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+    section#skills .skills .container .cards {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+section#skills .skills .container .cards .box {
+    position: relative;
+    text-align: center;
+    background-color: #212121;
+    padding: 1.7rem 4.2rem 3.7rem 4.2rem;
+    border-top-left-radius: 2.5rem;
+    cursor: pointer;
+    transition: .2s;
+    width: 200px;  /* Defina uma largura fixa para os boxes */
+    height: 250px; /* Defina uma altura fixa para os boxes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Alinha o conteúdo no centro */
+    align-items: center;      /* Alinha o conteúdo no centro */
+}
+
+section#skills .skills .container .cards .box p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #F9F9F9;
+    margin-bottom: 1.5rem;
+    text-align: center;  
+}
+
+section#skills .skills .container .cards .box::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: .3rem;
+    background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
+    bottom: -.1rem;
+    left: 0
+}
+
+section#skills .skills .container .cards .box:hover {
+    transform: scale(1.1)
 }
