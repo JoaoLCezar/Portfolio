@@ -169,11 +169,12 @@
 
     .descricao-contato a {
         text-decoration: none;
-        color: var(--color-black);
+        color: var(--text-primary);
         font-size: 1.5rem;
         letter-spacing: 1.5px;
         line-height: 1.4;
         font-weight: bold;
+        transition: color 0.3s ease;
     }
 
 

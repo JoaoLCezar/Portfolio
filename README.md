@@ -10,13 +10,27 @@ Projetos: Uma seleção dos meus trabalhos e projetos.
 Contato: Informações de contato e links para redes sociais.
 🎨 Tecnologias Utilizadas
 HTML5: Estrutura e semântica da página.
-CSS3: Estilização, incluindo responsividade.
-JavaScript: Funcionalidades interativas.
+CSS3: Estilização, incluindo responsividade e sistema de temas.
+JavaScript: Funcionalidades interativas e gerenciamento de temas.
 Git: Controle de versão.
+
+🌓 Modo Claro/Escuro
+O portfólio possui um sistema integrado de alternância entre tema claro e escuro:
+
+- **Botão de alternância**: Localizado no header, permite trocar entre os temas com um clique
+- **Ícones dinâmicos**: Sol (☀️) para modo escuro, Lua (🌙) para modo claro
+- **Persistência**: A preferência é salva no navegador usando localStorage
+- **Detecção automática**: Respeita a preferência do sistema operacional na primeira visita
+- **Transições suaves**: Todas as cores transitam suavemente entre os temas
+- **Totalmente responsivo**: Funciona perfeitamente em todos os dispositivos
 📂 Estrutura de Pastas
 index.html: Página principal do portfólio.
 assets/css: Contém os arquivos de estilo, incluindo style.css e responsividade.css.
-assets/js: Contém scripts JavaScript para interatividade, como actionButton.js, menu.js, e outros.
+assets/js: Contém scripts JavaScript para interatividade:
+  - theme.js: Gerenciamento do tema claro/escuro
+  - actionButton.js: Botões de ação (voltar ao topo, WhatsApp)
+  - menu.js: Navegação e menu hambúrguer
+  - E outros scripts para funcionalidades específicas
 assets/fonts: Fontes utilizadas no site.
 assets/img: Imagens e ícones usados na página.
 🚀 Como Executar o Projeto Localmente
