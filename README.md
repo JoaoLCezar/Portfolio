@@ -23,6 +23,28 @@ O portfólio possui um sistema integrado de alternância entre tema claro e escu
 - **Detecção automática**: Respeita a preferência do sistema operacional na primeira visita
 - **Transições suaves**: Todas as cores transitam suavemente entre os temas
 - **Totalmente responsivo**: Funciona perfeitamente em todos os dispositivos
+
+📱 Responsividade
+O site é totalmente responsivo e se adapta perfeitamente a diferentes tamanhos de tela:
+
+**Dispositivos Suportados:**
+- 📱 **Mobile Pequeno** (até 375px) - iPhone SE, Galaxy Fold
+- 📱 **Mobile** (até 480px) - iPhone 12/13/14, Galaxy S21
+- 📱 **Mobile Grande/Phablet** (até 768px) - iPhone Pro Max, iPad Mini
+- 💻 **Tablet** (até 1024px) - iPad, Galaxy Tab
+- 🖥️ **Desktop** (1024px+) - Laptops, Desktops, Monitores
+
+**Recursos de Responsividade:**
+- ✅ Layout fluido que se adapta a qualquer tamanho de tela
+- ✅ Imagens responsivas que ajustam automaticamente
+- ✅ Tipografia escalável usando clamp() e viewport units
+- ✅ Menu hambúrguer para mobile com animações suaves
+- ✅ Botões de ação otimizados para toque em mobile
+- ✅ Grid e flexbox para layouts adaptativos
+- ✅ Suporte a orientação landscape em mobile
+- ✅ Viewport height dinâmico (dvh) para melhor experiência mobile
+- ✅ Prevenção de scroll horizontal em todos os dispositivos
+- ✅ Touch-friendly com áreas de toque adequadas (mínimo 44x44px)
 📂 Estrutura de Pastas
 index.html: Página principal do portfólio.
 assets/css: Contém os arquivos de estilo, incluindo style.css e responsividade.css.
