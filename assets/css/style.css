@@ -517,7 +517,8 @@ a {
     background-color: var(--color-black);
     width: 100%;
     max-width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -531,23 +532,27 @@ a {
 .container-sobre {
     width: 100%;
     max-width: 1800px;
-    height: 100%;
+    height: auto;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     padding: 0 4rem;
+    gap: 2rem;
 }
 
 .headline-sobre {
-    height: 30%;
+    height: auto;
+    min-height: 150px;
     width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .headline-scroll {
@@ -596,22 +601,22 @@ a {
 }
 
 .conteudo-sobre {
-    position: relative;
     width: 100%;
-    height: 70%;
+    height: auto;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .left-sobre {
     color: var(--text-primary);
-    height: 100%;
+    height: auto;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     gap: 3rem;
     transition: color 0.3s ease;
 }
@@ -652,7 +657,7 @@ a {
 }
 
 .right-sobre {
-    height: 100%;
+    height: auto;
     width: 50%;
     display: flex;
     align-items: center;
@@ -663,46 +668,22 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 100%;
-    height: 100%;
-}
-
-.complemento-sobre {
-    width: 100%;
-    max-width: 400px;
-    position: relative;
-    z-index: 0;
-}
-
-.complemento-sobre img {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    width: 80%;
-    z-index: 1;
-    animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+    height: auto;
 }
 
 .imagem-sobre img {
     width: 100%;
     max-width: 400px;
     height: auto;
-    z-index: 2;
     border-radius: 50%;
     padding: 5px;
     border: 3px solid rgba(255, 255, 255, 0.3);
-    position: relative;
+    display: block;
+}
+
+.texto-giratorio {
+    display: none;
 }
 
 
