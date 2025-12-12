@@ -54,8 +54,6 @@
         flex-direction: column-reverse;
         height: auto;
         gap: 3rem;
-        position: relative;
-        top: 0;
     }
 
     .left-sobre {
@@ -67,33 +65,20 @@
     .right-sobre {
         width: 100%;
         height: auto;
-        max-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .imagem-sobre {
-        justify-content: center;
-        position: relative;
         width: 100%;
+        max-width: 400px;
         height: auto;
     }
 
     .imagem-sobre img {
-        max-width: 300px;
-    }
-
-    .complemento-sobre {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .complemento-sobre img {
-        position: absolute;
-        width: 80%;
-        left: 10%;
-        top: 10%;
+        max-width: 350px;
+        width: 100%;
     }
 
     /************************** SERVIÇOS ***/
